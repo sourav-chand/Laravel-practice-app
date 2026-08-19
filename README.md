@@ -13,7 +13,7 @@ A simple task/todo manager built with Laravel 13 for practice. Create, edit, com
 ## Tech Stack
 
 - Laravel 13
-- PHP 8.3+
+- PHP 8.4+
 - SQLite (default)
 - Blade templates
 - Tailwind CSS
@@ -28,3 +28,18 @@ php artisan serve
 ```
 
 Visit `http://localhost:8000/tasks`
+
+## Docker
+
+Start the application with Docker:
+
+```bash
+docker compose up --build -d
+```
+
+Visit `http://localhost:8000/tasks`. The SQLite database is stored in
+`database/database.sqlite` and remains available on the host. To stop the app:
+
+```bash
+docker compose down
+```
