@@ -43,3 +43,6 @@ Visit `http://localhost:8000/tasks`. The SQLite database is stored in
 ```bash
 docker compose down
 ```
+
+The Docker image installs production Composer dependencies during its build, so it
+can also be deployed without committing the `vendor` directory.
